@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         mBinding.textnumber.text = num.toString()
         mBinding.btnAdd1.setOnClickListener {
             num++
-            mBinding.textnumber.text = num.toString()
+            show()
         }
         mBinding.btnSub.setOnClickListener {
             num--
-            mBinding.textnumber.text = num.toString()
+           show()
         }
     }
 
@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         getSharedPreferences("data", Context.MODE_PRIVATE).edit().apply {
             putInt(KEY_numA, num)
         }.apply()
-
+fun show(){
+    mBinding.textnumber.text = num.toString()
+}
 
 }
