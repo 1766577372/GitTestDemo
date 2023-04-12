@@ -11,9 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
         mBinding.btnAdd1.setOnClickListener {
             num++
             mBinding.textnumber.text = num.toString()
         }
+
     }
 }

@@ -27,12 +27,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <include
-        layout="@layout/title"
-        android:layout_width="0dp"
+    <com.example.gittestdemo.TitleLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.example.gittestdemo.TitleLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
