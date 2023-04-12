@@ -20,7 +20,10 @@ class MainActivity : AppCompatActivity() {
             num++
             mBinding.textnumber.text = num.toString()
         }
-
+        mBinding.btnSub.setOnClickListener {
+            num--
+            mBinding.textnumber.text = num.toString()
+        }
     }
 
     fun Save() =
